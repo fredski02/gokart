@@ -4,12 +4,10 @@ import (
 	"log"
 	"net/http"
 
-	"ride-sharing/shared/env"
+	"gokart/shared/env"
 )
 
-var (
-	httpAddr = env.GetString("HTTP_ADDR", ":8081")
-)
+var httpAddr = env.GetString("HTTP_ADDR", ":8081")
 
 func main() {
 	log.Println("Starting API Gateway")
